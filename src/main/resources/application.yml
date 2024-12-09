@@ -1,0 +1,15 @@
+hibernate:
+  dialect: org.hibernate.dialect.PostgreSQLDialect
+  show_sql: true
+  format_sql: true
+  hbm2ddl:
+    auto: drop-and-create
+
+datasource:
+  driver-class-name: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/car_showroom
+  username: postgres
+  password: 963Luda963
+
+liquibase:
+  changelog: db/changelog/db.changelog-master.xml
